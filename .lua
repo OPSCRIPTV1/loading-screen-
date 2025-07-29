@@ -19,7 +19,7 @@ background.Parent = screenGui
 local warningText = Instance.new("TextLabel")
 warningText.Size = UDim2.new(0.9, 0, 0.2, 0)
 warningText.Position = UDim2.new(0.05, 0, 0.3, 0)
-warningText.Text = "⏳ Please wait 2 minutes...\nIf you leave early, the script won't work!"
+warningText.Text = "⏳ Please wait few minutes...\nIf you leave early, the script won't work!"
 warningText.Font = Enum.Font.GothamBold
 warningText.TextColor3 = Color3.new(1, 0.8, 0.1)
 warningText.TextScaled = true
@@ -39,7 +39,7 @@ timerLabel.BackgroundTransparency = 1
 timerLabel.Parent = background
 
 -- Countdown Logic
-local countdownTime = 500
+local countdownTime = 300
 
 for i = countdownTime, 0, -2 do
 	timerLabel.Text = "⏳ Time Left: " .. i .. "s"
